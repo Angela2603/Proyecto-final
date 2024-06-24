@@ -1,0 +1,44 @@
+<style>
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+}
+
+body {
+    background-color: #F5F5DC;
+    font-family: 'Crimson Pro', serif; /* Añadir la fuente 'Crimson Pro' */
+}
+
+/* Cambia el color y tamaño de los títulos */
+h1 {
+    color: #654321; /* Un marrón oscuro que combina bien con el beige */
+    font-size: 4em;
+    font-family: 'Crimson Pro', serif; /* Añadir la fuente 'Crimson Pro' */
+}
+
+h2 {
+    color: #D2B48C;     font-size: 2em;
+    font-family: 'Crimson Pro', serif;
+    margin-bottom: 1px; 
+}
+
+.caption-custom {
+    color: #6F4E37; /* Cambia esto al color que desees */
+    font-size: 18px; /* Cambia el tamaño de la fuente si es necesario */
+    font-family: 'Crimson Pro', serif;
+    text-align: justify; 
+    }
+
+.custom-divider {
+    border-top: 2px solid #D2B48C;  /* Cambia el color y el grosor del divisor */
+    margin-top: 0px;  /* Ajusta el margen superior */
+    margin-bottom: 20px;  /* Ajusta el margen inferior */
+}
+
+</style>
