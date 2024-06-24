@@ -172,7 +172,7 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 ## Prototipo con tiempo y aspecto
 
 ### opcion de base
-st.markdown(unsafe_allow_html=True)
+
 base = st.selectbox(
     "prueba",
     (quechua))
