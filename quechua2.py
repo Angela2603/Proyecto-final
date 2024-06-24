@@ -175,6 +175,7 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 ### opcion de base
 
 base = st.selectbox(
+    "",
     (quechua))
 st.write("El verbo en español es", dict_que_esp[base])
 
