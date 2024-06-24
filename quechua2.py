@@ -162,8 +162,7 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 ## Header escoger un verbo
 st.header('Escoge un verbo')
 
-st.markdown('<p class="caption-custom">Escoge el verbo que quieras para obtenerlo conjugado</p>', unsafe_allow_html=True)
-
+st.markdown('<p class="caption-custom">Escoge el verbo que quieres conjugar:</p>', unsafe_allow_html=True)
 
 
 ## Con pronombres y aspecto
@@ -175,7 +174,7 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 ### opcion de base
 
 base = st.selectbox(
-    "",
+    "prueba",
     (quechua))
 st.write("El verbo en español es", dict_que_esp[base])
 
