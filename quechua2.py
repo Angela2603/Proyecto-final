@@ -157,6 +157,8 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 ## texto de presentacion
 st.markdown('<p class="caption-custom">Te presentamos el conjugador de quechua de la variedad <b>chanca</b>. Esta variedad es conocida también como variedad <b>ayacuchana</b> y forma parte de la <b>subrama sureña</b> o <b>subrama Quechua II</b>. Es hablada en Huancavelica, Ayacucho y en la parte oeste de Apurímac.</p>', unsafe_allow_html=True)
 
+st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
+
 ## Header escoger un verbo
 st.header('Escoge un verbo')
 
@@ -173,7 +175,6 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 ### opcion de base
 
 base = st.selectbox(
-    "Seleccione un verbo en quechua",
     (quechua))
 st.write("El verbo en español es", dict_que_esp[base])
 
