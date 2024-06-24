@@ -133,9 +133,8 @@ local_css("styles.css")
 
 #### logo y columna
 
-col1, col2 = st.columns([1, 2])  # Ajusta los valores para cambiar la proporción entre columnas
+col1, col2 = st.columns([1, 2])  
 
-# Colocar el título en la primera columna
 ## título de la página
 with col2:
     st.title('CONJUGADOR DE QUECHUA CHANCA')
@@ -157,6 +156,7 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 ## texto de presentacion
 st.markdown('<p class="caption-custom">Te presentamos el conjugador de quechua de la variedad <b>chanca</b>. Esta variedad es conocida también como variedad <b>ayacuchana</b> y forma parte de la <b>subrama sureña</b> o <b>subrama Quechua II</b>. Es hablada en Huancavelica, Ayacucho y en la parte oeste de Apurímac.</p>', unsafe_allow_html=True)
 
+## divider 2
 st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 ## Header escoger un verbo
