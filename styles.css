@@ -27,7 +27,7 @@ h1 {
 
 h2 {
     color: #D2B48C;     font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Crimson Pro', serif;
     margin-bottom: 1px; 
 }
 
@@ -40,7 +40,7 @@ h3 {
 .caption-custom {
     color: #6F4E37; /* Cambia esto al color que desees */
     font-size: 18px; /* Cambia el tamaño de la fuente si es necesario */
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Montserrat', serif;
     text-align: justify; 
     }
 
