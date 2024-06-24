@@ -28,6 +28,12 @@ h2 {
     margin-bottom: 1px; 
 }
 
+h3 {
+    color: #D2B48C;     font-size: 2em;
+    font-family: 'Crimson Pro', serif;
+    margin-bottom: 1px; 
+}
+
 .caption-custom {
     color: #6F4E37; /* Cambia esto al color que desees */
     font-size: 18px; /* Cambia el tamaño de la fuente si es necesario */
@@ -40,5 +46,13 @@ h2 {
     margin-top: 0px;  /* Ajusta el margen superior */
     margin-bottom: 20px;  /* Ajusta el margen inferior */
 }
+
+selectbox_css = """
+<style>
+div[data-baseweb="select"] {
+  font-family: 'Crimson Pro', serif;
+  color: blue;
+}
+</style>
 
 </style>

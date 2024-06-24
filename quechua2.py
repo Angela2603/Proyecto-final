@@ -150,13 +150,18 @@ with col1:
 
 st.header('¡Bienvenido!')
 
-
-
+## divider 1 personalizado
     
 st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 ## texto de presentacion
 st.markdown('<p class="caption-custom">Te presentamos el conjugador de quechua de la variedad <b>chanca</b>. Esta variedad es conocida también como variedad <b>ayacuchana</b> y forma parte de la <b>subrama sureña</b> o <b>subrama Quechua II</b>. Es hablada en Huancavelica, Ayacucho y en la parte oeste de Apurímac.</p>', unsafe_allow_html=True)
+
+## Header escoger un verbo
+st.header('Escoge un verbo')
+
+st.markdown('<p class="caption-custom">Escoge el verbo que quieras para obtenerlo conjugado</p>', unsafe_allow_html=True)
+
 
 
 ## Con pronombres y aspecto
@@ -248,9 +253,14 @@ else:
 
 st.write("**Resultado:**",resultado)
 
+##############################################################################
 
-##############################################################################
-##############################################################################
+## GENERADOR DE ARCHIVOS
+
+## Presente simple
+Dict_Pres_Sim = {}
+
+
 
 
 
