@@ -1,8 +1,6 @@
 <style>
 
-@import url("https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
 
 .logo {
     display: flex;
@@ -17,7 +15,7 @@
 
 body {
     background-color: #F5F5DC;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Crimson Pro', serif; /* Añadir la fuente 'Crimson Pro' */
 }
 
 /* Cambia el color y tamaño de los títulos */
@@ -56,6 +54,4 @@ div[data-baseweb="select"] {
   font-family: 'Crimson Pro', serif;
   color: blue;
 }
-</style>
-
 </style>
