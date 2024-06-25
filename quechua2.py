@@ -257,6 +257,8 @@ st.write("**Resultado:**",resultado)
 
 ##############################################################################
 
+
+
 ## GENERADOR DE ARCHIVOS
 
 ## Presente simple

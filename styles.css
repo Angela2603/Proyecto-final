@@ -27,17 +27,16 @@ body {
 /* Cambia el color y tamaño de los títulos */
 
 
-.title {
+h1 {
     color: #654321; 
     font-size: 4em;
-    font-family: 'Playfair Display', serif;
-} 
+    font-family: 'Crimson Pro', serif; 
+}
 
-.subtitle {
-    font-family: 'Oswald', serif;
-    font-weight: 700;
-    font-size: 2em;
-    color: #D2B48C;
+h2 {
+    color: #D2B48C;     font-size: 2em;
+    font-family: 'Crimson Pro', serif;
+    margin-bottom: 1px; 
 }
 
 h3 {
