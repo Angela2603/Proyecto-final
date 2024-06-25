@@ -130,8 +130,6 @@ def local_css(file_name):
 #### Cargar el CSS
 local_css("styles.css")
 
-#### 
-st.markdown('<h1 class="title">Título con Playfair Display</h1>', unsafe_allow_html=True)
 
 #### logo y columna
 
@@ -139,7 +137,8 @@ col1, col2 = st.columns([1, 2])
 
 ## título de la página
 with col2:
-    st.title('CONJUGADOR DE QUECHUA CHANCA')
+    st.markdown('<h1 class="title">CONJUGADOR DE QUECHUA CHANCA</h1>', unsafe_allow_html=True)
+    
 ## logo de la página
 # Colocar la imagen en la segunda columna
 with col1:
