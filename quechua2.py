@@ -261,12 +261,6 @@ st.write("**Resultado:**",resultado)
 ## Presente simple
 Dict_Pres_Sim = {}
 
-# Ejemplo de contenido en la página de Streamlit
-st.title("Mi Aplicación Streamlit")
-st.header("Este es un header")
-st.subheader("Este es un subheader")
-st.text("Este es un texto simple.")
-st.selectbox("Elige una opción", ["Opción 1", "Opción 2", "Opción 3"])
 
 
 
