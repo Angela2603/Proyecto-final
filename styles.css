@@ -33,12 +33,11 @@ body {
     font-family: 'Playfair Display', serif;
 } 
 
-
-
-h2 {
-    color: #D2B48C;     font-size: 2em;
-    font-family: 'Crimson Pro', serif;
-    margin-bottom: 1px; 
+.subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #D2B48C;
 }
 
 h3 {

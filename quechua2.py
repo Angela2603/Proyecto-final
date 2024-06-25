@@ -148,7 +148,7 @@ with col1:
 
 ## presentacion
 
-st.header('¡Bienvenido!')
+st.markdown('<h2 class="subtitle">¡Bienvenido!',unsafe_allow_html=True)
 
 ## divider 1 personalizado
     
