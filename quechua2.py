@@ -137,8 +137,7 @@ col1, col2 = st.columns([1, 2])
 
 ## título de la página
 with col2:
-    st.markdown('<h1 class="title">CONJUGADOR DE QUECHUA CHANCA</h1>', unsafe_allow_html=True)
-    
+    st.title('CONJUGADOR DE QUECHUA CHANCA')
 ## logo de la página
 # Colocar la imagen en la segunda columna
 with col1:
@@ -148,7 +147,7 @@ with col1:
 
 ## presentacion
 
-st.markdown('<h2 class="subtitle">¡Bienvenido!',unsafe_allow_html=True)
+st.header('¡Bienvenido!')
 
 ## divider 1 personalizado
     
@@ -256,8 +255,6 @@ else:
 st.write("**Resultado:**",resultado)
 
 ##############################################################################
-
-
 
 ## GENERADOR DE ARCHIVOS
 
