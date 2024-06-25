@@ -1,6 +1,12 @@
 <style>
 
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /* OSWALD */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); /* PLAYFAIR DISPLAY */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 .logo {
     display: flex;
@@ -19,11 +25,15 @@ body {
 }
 
 /* Cambia el color y tamaño de los títulos */
-h1 {
+
+
+.title {
     color: #654321; 
     font-size: 4em;
-    font-family: 'Crimson Pro', serif; /* Añadir la fuente 'Crimson Pro' */
-}
+    font-family: 'Playfair Display', sans-serif;
+} 
+
+
 
 h2 {
     color: #D2B48C;     font-size: 2em;

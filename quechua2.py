@@ -130,6 +130,8 @@ def local_css(file_name):
 #### Cargar el CSS
 local_css("styles.css")
 
+#### 
+st.markdown('<h1 class="title">Título con Playfair Display</h1>', unsafe_allow_html=True)
 
 #### logo y columna
 
