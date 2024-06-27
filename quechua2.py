@@ -139,7 +139,6 @@ col1, col2 = st.columns([1, 2])
 with col2:
     st.title('CONJUGADOR DE QUECHUA CHANCA')
 ## logo de la página
-# Colocar la imagen en la segunda columna
 with col1:
     st.image('assets/1.png', width=250)
 
