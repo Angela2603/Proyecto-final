@@ -122,21 +122,74 @@ def C_Pas_NExp_Hab(base,persona,numero):
 
 ########## configuracion del tema de la pagina
 
-# Función para cargar el CSS
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-#### Cargar el CSS
-local_css("styles.css")
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-body {
-    font-family: 'Your Font Name', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /* OSWALD */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); /* PLAYFAIR DISPLAY */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
-</style>
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+}
+
+body {
+    background-color: #F5F5DC;
+    font-family: 'Crimson Pro', serif; /* Añadir la fuente 'Crimson Pro' */
+}
+
+/* Cambia el color y tamaño de los títulos */
+
+
+h1 {
+    color: #654321; 
+    font-size: 4em;
+    font-family: 'Crimson Pro', serif; 
+}
+
+h2 {
+    color: #D2B48C;     font-size: 2em;
+    font-family: 'Crimson Pro', serif;
+    margin-bottom: 1px; 
+}
+
+h3 {
+    color: #D2B48C;     font-size: 2em;
+    font-family: 'Crimson Pro', serif;
+    margin-bottom: 1px; 
+}
+
+.caption-custom {
+    color: #6F4E37; /* Cambia esto al color que desees */
+    font-size: 17px; /* Cambia el tamaño de la fuente si es necesario */
+    font-family: 'Oswald', sans-serif;
+    text-align: justify; 
+    }
+
+.custom-divider {
+    border-top: 2px solid #D2B48C;  /* Cambia el color y el grosor del divisor */
+    margin-top: 0px;  /* Ajusta el margen superior */
+    margin-bottom: 20px;  /* Ajusta el margen inferior */
+}
+
+div[data-baseweb="select"] {
+  font-family: 'Crimson Pro', serif;
+  color: blue;
+}
+
 """, unsafe_allow_html=True)
 
 
