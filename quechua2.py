@@ -130,6 +130,15 @@ def local_css(file_name):
 #### Cargar el CSS
 local_css("styles.css")
 
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body {
+    font-family: 'Your Font Name', sans-serif;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 #### logo y columna
 
