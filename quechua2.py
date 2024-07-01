@@ -156,19 +156,19 @@ body {
 /* Cambia el color y tamaño de los títulos */
 
 
-h1 {
+.header1 {
     color: #654321; 
     font-size: 4em;
     font-family: 'Playfair Display', serif; 
 }
 
-h2 {
+.header2 {
     color: #D2B48C;     font-size: 2em;
     font-family: 'Crimson Pro', serif;
     margin-bottom: 1px; 
 }
 
-h3 {
+.header3 {
     color: #D2B48C;     font-size: 2em;
     font-family: 'Crimson Pro', serif;
     margin-bottom: 1px; 
@@ -201,7 +201,7 @@ col1, col2 = st.columns([1, 2])
 
 ## título de la página
 with col2:
-    st.title('CONJUGADOR DE QUECHUA CHANCA')
+    st.markdown('<h1 class="header1">CONJUGADOR DE QUECHUA CHANCA</h1>', unsafe_allow_html=True)
 ## logo de la página
 with col1:
     st.image('assets/1.png', width=250)
@@ -209,8 +209,8 @@ with col1:
 
 
 ## presentacion
+st.markdown('<h2 class="header2">¡Bienvenido!</h2>', unsafe_allow_html=True)
 
-st.header('¡Bienvenido!')
 
 ## divider 1 personalizado
     
@@ -244,7 +244,7 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 ### opcion de base
 
 base = st.selectbox(
-    "prueba",
+    "",
     (quechua))
 st.write("El verbo en español es", dict_que_esp[base])
 
