@@ -244,7 +244,7 @@ st.write("El verbo en español es", dict_que_esp[base])
 ### opcion de persona
 
 persona = st.radio(
-    'Seleccione la persona',
+    'Selecciona la persona',
     ['Primera','Segunda','Tercera','Cuarta'])
 
 ### opcion de numero
@@ -336,11 +336,11 @@ base2 = st.selectbox(
     (quechua))
 
 persona2 = st.radio(
-    'Selecciona la persona',
+    'Escoge la persona',
     ['Primera','Segunda','Tercera','Cuarta'])
 
 numero2 = st.radio(
-    'Selecciona el número',
+    'Escoge el número',
     ['Singular','Plural'])
 
 
