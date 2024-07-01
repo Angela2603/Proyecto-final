@@ -322,7 +322,9 @@ st.write("**Resultado:**",resultado)
 ## GENERADOR DE ARCHIVOS
 
 ## Presente simple
-Dict_Pres_Sim = {}
+Dict_previo = {}
+Dict_de_todo = {}
+
 
 def intento1(base):
     t = ['Presente','Pasado']
@@ -330,14 +332,16 @@ def intento1(base):
     
     for t1 in t:
         for asp1 in asp:
-            for p in D[persona]:
-                for n in D[persona][numero]:
-                    Dict_Pres_Sim[t] = CPS(base,persona,numero)
+            for a in D[persona][numero]:
+                Dict_previo[persona] = CPS(base, persona, numero)
+                for n in D[persona]:
+                    Dict_de_todo[t] = Dict_previo[persona] 
+                  
             
-    return Dict_Pres_Sim
+    return Dict_de_todo
 
 intento1(base)
-Dict_Pres_Sim
+Dict_de_todo
 
 
 
