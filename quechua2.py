@@ -319,28 +319,35 @@ st.write("**Resultado:**",resultado)
 
 ##############################################################################
 
+st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
+
 ## GENERADOR DE ARCHIVOS
 
-## Presente simple
-Dict_previo = {}
-Dict_de_todo = {}
+## título
 
 
-def intento1(base):
-    t = ['Presente','Pasado']
-    asp = ['Simple','Progresivo','Habitual']
-    for a in D[persona][numero]:
-        Dict_previo[persona] = CPS(base, persona, numero)
-        for n in D[persona]:
-            for t1 in t:
-                for asp1 in asp:
-                    Dict_de_todo[t] = Dict_previo[persona]
-      
-            
-    return Dict_de_todo
+t = ['Presente','Pasado']
+asp = ['Simple','Progresivo','Habitual']
+asp2 = ['Experimentado','No experimentado']
 
-intento1(base)
-Dict_de_todo
+
+base = st.selectbox(
+    "prueba",
+    (quechua))
+st.write("El verbo en español es", dict_que_esp[base])
+
+persona = st.radio(
+    'Seleccione la persona',
+    ['Primera','Segunda','Tercera','Cuarta'])
+
+
+## Df de presente simple
+
+
+
+#### TRADUCTOR INVERSO
+
+
 
 
 
