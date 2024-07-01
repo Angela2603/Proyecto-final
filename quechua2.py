@@ -326,10 +326,53 @@ import itertools
 
 ## título
 
+def generador(t,asp,base,persona,numero):
+    
+    if persona == 'Cuarta' and numero == 'Plural':
+      resultado = 'No existe cuarta persona plural'
+    ## Establecer el resultado según tiempo y aspecto
+    else:
+      ## presente simple
+      if t == 'Presente' and asp == 'Simple':
+        v_conj = CPS(base,persona,numero)
+      ## presente progresivo
+      if t == 'Presente' and asp == 'Progresivo':
+        v_conj = CPC(base,persona,numero)
+      ## presente habitual
+      if t == 'Presente' and asp == 'Habitual':
+        v_conj = CPH(base,persona,numero)
+      resultado = v_conj
+  
+    return resultado
 
-t = ['Presente','Pasado']
+tiempos = ['Presente']
+aspectos = ['Simple','Progresivo','Habitual']
+bases = st.selectbox(
+    "",
+    (quechua))
+personas = list(D.keys())
+numeros = ['Singular','Plural']
+
+combinaciones = list(itertools.product(tiempos, aspectos, bases, personas, numeros))
+
+resultados = [generador(t, asp, base, persona, numero) for t, asp, base, persona, numero in combinaciones]
+
+for (t, asp, base, persona, numero), resultado in zip(combinaciones, resultados):
+    print(f"generador({t}, {asp}, {base}, {persona}, {numero}) = {resultado}")
+
+
+dict_1 = {}
 asp = ['Simple','Progresivo','Habitual']
 asp2 = ['Experimentado','No experimentado']
+
+def intento1(asp):
+    for a in asp:
+        CPS(base,persona,numero)
+    return dict_1
+
+
+
+
 
 
 base = st.selectbox(
