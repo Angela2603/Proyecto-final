@@ -335,7 +335,7 @@ def intento1(base):
             for a in D[persona][numero]:
                 Dict_previo[persona] = CPS(base, persona, numero)
                 for n in D[persona]:
-                    Dict_de_todo[t] = Dict_previo[persona] 
+                    Dict_de_todo[t] = Dict_previo
                   
             
     return Dict_de_todo
