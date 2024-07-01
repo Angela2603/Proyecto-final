@@ -332,7 +332,7 @@ def intento1(base,t,asp):
             
     return Dict_Pres_Sim
 
-Dict_Pres_Sim
+Dict_Pres_Sim('ri','Presente','Simple')
 
 
 
