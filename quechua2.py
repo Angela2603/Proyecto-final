@@ -332,7 +332,7 @@ asp2 = ['Experimentado','No experimentado']
 
 
 base2 = st.selectbox(
-    "",
+    "Escoge un verbo",
     (quechua))
 
 persona2 = st.radio(
