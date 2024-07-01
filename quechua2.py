@@ -331,14 +331,18 @@ asp = ['Simple','Progresivo','Habitual']
 asp2 = ['Experimentado','No experimentado']
 
 
-base = st.selectbox(
+base2 = st.selectbox(
     "prueba",
     (quechua))
 st.write("El verbo en español es", dict_que_esp[base])
 
-persona = st.radio(
+persona2 = st.radio(
     'Seleccione la persona',
     ['Primera','Segunda','Tercera','Cuarta'])
+
+numero2 = st.radio(
+    'Selecciona el número',
+    ['Singular','Plural'])
 
 
 ## Df de presente simple
