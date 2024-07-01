@@ -361,42 +361,7 @@ for (t, asp, base, persona, numero), resultado in zip(combinaciones, resultados)
     print(f"generador({t}, {asp}, {base}, {persona}, {numero}) = {resultado}")
 
 
-dict_1 = {}
-asp = ['Simple','Progresivo','Habitual']
-asp2 = ['Experimentado','No experimentado']
 
-def intento1(asp):
-    for a in asp:
-        CPS(base,persona,numero)
-    return dict_1
-
-
-
-
-
-
-base = st.selectbox(
-    "Escoge un verbo",
-    (quechua))
-
-persona = st.radio(
-    'Escoge la persona',
-    ['Primera','Segunda','Tercera','Cuarta'])
-
-numero = st.radio(
-    'Escoge el número',
-    ['Singular','Plural'])
-
-
-combinaciones = list(itertools.product(base,persona,numero))
-
-resultados = [CPS(base,persona,numero) for base,persona,numero in combinaciones]
-
-# Mostrar los resultados
-for (base,persona,numero), resultado in zip(combinaciones, resultados):
-    print(f"CPS({base}, {persona}, {numero}) = {resultado}")
-
-## Df de presente simple
 
 
 
