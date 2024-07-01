@@ -345,12 +345,12 @@ numeros = st.radio(
     ['Singular','Plural'])
 
 
-combinaciones = list(itertools.product(bases, personas, numeros))
+combinaciones = list(itertools.product(bases,personas,numeros))
 
-resultados = [CPS(base, persona, numero) for base, persona, numero in combinaciones]
+resultados = [CPS(base,persona,numero) for base,persona,numero in combinaciones]
 
 # Mostrar los resultados
-for (base, persona, numero), resultado in zip(combinaciones, resultados):
+for (base,persona,numero), resultado in zip(combinaciones, resultados):
     print(f"CPS({base}, {persona}, {numero}) = {resultado}")
 
 ## Df de presente simple
