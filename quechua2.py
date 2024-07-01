@@ -222,6 +222,13 @@ st.markdown('<p class="caption-custom">Te presentamos el conjugador de quechua d
 ## divider 2
 st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
+### CONJUGADOR DE QUECHUA
+
+## título de PARTE 1
+ 
+st.header('¡Escoge un verbo y obtentlo conjugado')
+
+
 ## Header escoger un verbo
 st.header('Escoge un verbo')
 
@@ -320,46 +327,6 @@ st.write("**Resultado:**",resultado)
 ##############################################################################
 
 st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
-
-## GENERADOR DE ARCHIVOS
-import itertools
-
-## título
-
-def generador(t,asp,base,persona,numero):
-    
-    if persona == 'Cuarta' and numero == 'Plural':
-      resultado = 'No existe cuarta persona plural'
-    ## Establecer el resultado según tiempo y aspecto
-    else:
-      ## presente simple
-      if t == 'Presente' and asp == 'Simple':
-        v_conj = CPS(base,persona,numero)
-      ## presente progresivo
-      if t == 'Presente' and asp == 'Progresivo':
-        v_conj = CPC(base,persona,numero)
-      ## presente habitual
-      if t == 'Presente' and asp == 'Habitual':
-        v_conj = CPH(base,persona,numero)
-      resultado = v_conj
-  
-    return resultado
-
-tiempos = ['Presente']
-aspectos = ['Simple','Progresivo','Habitual']
-bases = ['ri','ranti']
-personas = list(D.keys())
-numeros = ['Singular','Plural']
-
-combinaciones = list(itertools.product(tiempos, aspectos, bases, personas, numeros))
-
-resultados = [generador(t, asp, base, persona, numero) for t, asp, base, persona, numero in combinaciones]
-
-for (t, asp, base, persona, numero), resultado in zip(combinaciones, resultados):
-    print(f"generador({t}, {asp}, {base}, {persona}, {numero}) = {resultado}")
-
-
-st.write("**Resultado:**",f"generador({t}, {asp}, {base}, {persona}, {numero}) = {resultado}")
 
 
 
