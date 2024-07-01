@@ -159,7 +159,7 @@ body {
 h1 {
     color: #654321; 
     font-size: 4em;
-    font-family: 'Crimson Pro', serif; 
+    font-family: 'Playfair Display', serif; 
 }
 
 h2 {
@@ -226,7 +226,7 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 ## título de PARTE 1
  
-st.header('¡Escoge un verbo y obtentlo conjugado')
+st.header('Escoge un verbo y obtentlo conjugado')
 
 
 ## Header escoger un verbo
