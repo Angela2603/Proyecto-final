@@ -29,6 +29,8 @@ for i in datos.index:
   d = dict(zip(['Singular','Plural'],f[1:]))
   D[f[0]] = d
 
+D
+
 ##### FUNCIONES ######
 
 ## Conj presente simple
@@ -323,9 +325,6 @@ st.write("**Resultado:**",resultado)
 Dict_Pres_Sim = {}
 
 def intento1(base,persona,numero,t,asp):
-    for p1 in CPS(base,persona,numero):
-        if t == 'Presente' and asp == 'Simple':
-            Dict_Pres_Sim[t]= D[persona][numero]
     
     return Dict_Pres_Sim
 
