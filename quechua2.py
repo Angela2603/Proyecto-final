@@ -324,15 +324,19 @@ st.write("**Resultado:**",resultado)
 ## Presente simple
 Dict_Pres_Sim = {}
 
-def intento1(base,t,asp):
-    if t == 'Presente' and asp == 'Simple':
-        for p in D[persona]:
-            for n in D[persona][numero]:
-                Dict_Pres_Sim[t] = CPS(base,persona,numero)
+def intento1(base):
+    t = ['Presente','Pasado']
+    asp = ['Simple','Progresivo','Habitual']
+    
+    for t1 in t:
+        for asp1 in asp:
+            for p in D[persona]:
+                for n in D[persona][numero]:
+                    Dict_Pres_Sim[t] = CPS(base,persona,numero)
             
     return Dict_Pres_Sim
 
-intento1('ri','Presente','Simple')
+intento1(base)
 Dict_Pres_Sim
 
 
