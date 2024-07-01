@@ -332,12 +332,11 @@ asp2 = ['Experimentado','No experimentado']
 
 
 base2 = st.selectbox(
-    "prueba",
+    "",
     (quechua))
-st.write("El verbo en español es", dict_que_esp[base])
 
 persona2 = st.radio(
-    'Seleccione la persona',
+    'Selecciona la persona',
     ['Primera','Segunda','Tercera','Cuarta'])
 
 numero2 = st.radio(
