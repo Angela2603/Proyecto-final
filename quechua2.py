@@ -322,12 +322,13 @@ st.write("**Resultado:**",resultado)
 ## Presente simple
 Dict_Pres_Sim = {}
 
-def intento1(base,persona,numero,tiempo):
+def intento1(base,persona,numero,t):
     for p1 in CPS(base,persona,numero):
         if t == 'Presente' and asp == 'Simple':
             Dict_Pres_Sim = {} + {D[persona][numero]}
     
     return Dict_Pres_Sim
+
 Dict_Pres_Sim
 
 
