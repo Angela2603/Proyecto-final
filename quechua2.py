@@ -333,6 +333,7 @@ def intento1(base,t,asp):
     return Dict_Pres_Sim
 
 intento1('ri','Presente','Simple')
+Dict_Pres_Sim
 
 
 
