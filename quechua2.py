@@ -325,7 +325,7 @@ st.write("**Resultado:**",resultado)
 Dict_Pres_Sim = {}
 
 def intento1(base,persona,numero,t,asp):
-    if t = 'Presente' and asp = 'Simple':
+    if t == 'Presente' and asp == 'Simple':
         for persona in D[persona]:
             for numero in D[persona][numero]:
                 Dict_Pres_Sim[t] = CPS(base,persona,numero)
