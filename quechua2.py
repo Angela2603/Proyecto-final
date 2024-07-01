@@ -29,7 +29,7 @@ for i in datos.index:
   d = dict(zip(['Singular','Plural'],f[1:]))
   D[f[0]] = d
 
-D
+D ### borrar luego
 
 ##### FUNCIONES ######
 
@@ -325,7 +325,11 @@ st.write("**Resultado:**",resultado)
 Dict_Pres_Sim = {}
 
 def intento1(base,persona,numero,t,asp):
-    
+    if t = 'Presente' and asp = 'Simple':
+        for persona in D[persona]:
+            for numero in D[persona][numero]:
+                Dict_Pres_Sim[t] = CPS(base,persona,numero)
+            
     return Dict_Pres_Sim
 
 Dict_Pres_Sim
