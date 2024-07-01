@@ -347,9 +347,7 @@ def generador(t,asp,base,persona,numero):
 
 tiempos = ['Presente']
 aspectos = ['Simple','Progresivo','Habitual']
-bases = st.selectbox(
-    "",
-    (quechua))
+bases = ['ri','ranti']
 personas = list(D.keys())
 numeros = ['Singular','Plural']
 
