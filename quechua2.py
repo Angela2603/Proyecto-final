@@ -332,25 +332,25 @@ asp = ['Simple','Progresivo','Habitual']
 asp2 = ['Experimentado','No experimentado']
 
 
-base2 = st.selectbox(
+bases = st.selectbox(
     "Escoge un verbo",
     (quechua))
 
-persona2 = st.radio(
+personas = st.radio(
     'Escoge la persona',
     ['Primera','Segunda','Tercera','Cuarta'])
 
-numero2 = st.radio(
+numeros = st.radio(
     'Escoge el número',
     ['Singular','Plural'])
 
 
-combinaciones = list(itertools.product(base2, persona2, numero2))
+combinaciones = list(itertools.product(bases, personas, numeros))
 
-resultados = [CPS(base2, persona2, numero2) for base2, persona2, numero2 in combinaciones]
+resultados = [CPS(base, persona, numero) for base, persona, numero in combinaciones]
 
 # Mostrar los resultados
-for (base2, persona2, numero2), resultado in zip(combinaciones, resultados):
+for (base, persona, numero), resultado in zip(combinaciones, resultados):
     print(f"CPS({base}, {persona}, {numero}) = {resultado}")
 
 ## Df de presente simple
