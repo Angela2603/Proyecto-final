@@ -322,6 +322,7 @@ st.write("**Resultado:**",resultado)
 st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 ## GENERADOR DE ARCHIVOS
+import itertools
 
 ## título
 
@@ -343,6 +344,14 @@ numero2 = st.radio(
     'Escoge el número',
     ['Singular','Plural'])
 
+
+combinaciones = list(itertools.product(base2, persona2, numero2))
+
+resultados = [CPS(base2, persona2, numero2) for base2, persona2, numero2 in combinaciones]
+
+# Mostrar los resultados
+for (base2, persona2, numero2), resultado in zip(combinaciones, resultados):
+    print(f"CPS({base}, {persona}, {numero}) = {resultado}")
 
 ## Df de presente simple
 
