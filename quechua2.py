@@ -332,20 +332,20 @@ asp = ['Simple','Progresivo','Habitual']
 asp2 = ['Experimentado','No experimentado']
 
 
-bases = st.selectbox(
+base = st.selectbox(
     "Escoge un verbo",
     (quechua))
 
-personas = st.radio(
+persona = st.radio(
     'Escoge la persona',
     ['Primera','Segunda','Tercera','Cuarta'])
 
-numeros = st.radio(
+numero = st.radio(
     'Escoge el número',
     ['Singular','Plural'])
 
 
-combinaciones = list(itertools.product(bases,personas,numeros))
+combinaciones = list(itertools.product(base,persona,numero))
 
 resultados = [CPS(base,persona,numero) for base,persona,numero in combinaciones]
 
