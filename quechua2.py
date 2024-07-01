@@ -359,6 +359,7 @@ for (t, asp, base, persona, numero), resultado in zip(combinaciones, resultados)
     print(f"generador({t}, {asp}, {base}, {persona}, {numero}) = {resultado}")
 
 
+st.write("**Resultado:**",f"generador({t}, {asp}, {base}, {persona}, {numero}) = {resultado}")
 
 
 
