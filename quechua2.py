@@ -329,14 +329,13 @@ Dict_de_todo = {}
 def intento1(base):
     t = ['Presente','Pasado']
     asp = ['Simple','Progresivo','Habitual']
-    
-    for t1 in t:
-        for asp1 in asp:
-            for a in D[persona][numero]:
-                Dict_previo[persona] = CPS(base, persona, numero)
-                for n in D[persona]:
-                    Dict_de_todo[t] = Dict_previo
-                  
+    for a in D[persona][numero]:
+        Dict_previo[persona] = CPS(base, persona, numero)
+        for n in D[persona]:
+            for t1 in t:
+                for asp1 in asp:
+                    Dict_de_todo[t] = Dict_previo[persona]
+      
             
     return Dict_de_todo
 
