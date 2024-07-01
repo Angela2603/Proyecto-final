@@ -163,8 +163,8 @@ body {
 }
 
 .header2 {
-    color: #D2B48C;     font-size: 2em;
-    font-family: 'Crimson Pro', serif;
+    color: #765432;     font-size: 2em;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 1px; 
 }
 
