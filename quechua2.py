@@ -171,7 +171,7 @@ body {
 }
 
 .header3 {
-    color: #654321;     font-size: 30px;
+    color: #654321;     font-size: 40px;
     font-family: 'Wittgenstein', serif;
     margin-bottom: 1px; 
 }
