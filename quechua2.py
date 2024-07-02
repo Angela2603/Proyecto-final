@@ -184,7 +184,7 @@ body {
     }
 
 .custom-divider {
-    border-top: 2px solid #DEB887;  /* Cambia el color y el grosor del divisor */
+    border-top: 2px solid ##F5F5DC;  /* Cambia el color y el grosor del divisor */
     margin-top: 0px;  /* Ajusta el margen superior */
     margin-bottom: 20px;  /* Ajusta el margen inferior */
 }
