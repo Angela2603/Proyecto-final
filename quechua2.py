@@ -165,13 +165,13 @@ body {
 }
 
 .header2 {
-    color: #654321;     font-size: 2em;
+    color: #C2B080;     font-size: 2em;
     font-family: 'Wittgenstein', serif;
     margin-bottom: 1px; 
 }
 
 .header3 {
-    color: #C2B080;     font-size: 40px;
+    color: #654321;     font-size: 40px;
     font-family: 'Wittgenstein', serif;
     margin-bottom: 1px; 
 }
