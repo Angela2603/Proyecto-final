@@ -137,7 +137,7 @@ st.markdown("""
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
 
 .logo {
     display: flex;
@@ -166,7 +166,7 @@ body {
 
 .header2 {
     color: #654321;     font-size: 50px;
-    font-family: 'Yeseva', serif;
+    font-family: 'Wittgenstein', serif;
     margin-bottom: 1px; 
 }
 
