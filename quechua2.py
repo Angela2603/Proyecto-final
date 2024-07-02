@@ -177,20 +177,20 @@ body {
 }
 
 .caption-custom {
-    color: #D2B48C; /* Cambia esto al color que desees */
+    color: #DEB887; /* Cambia esto al color que desees */
     font-size: 16px; /* Cambia el tamaño de la fuente si es necesario */
     font-family: 'Montserrat', sans-serif;
     text-align: justify; 
     }
 
 .custom-divider {
-    border-top: 2px solid #7f5f42;  /* Cambia el color y el grosor del divisor */
+    border-top: 2px solid #997d64;  /* Cambia el color y el grosor del divisor */
     margin-top: 0px;  /* Ajusta el margen superior */
     margin-bottom: 20px;  /* Ajusta el margen inferior */
 }
 
 div[data-baseweb="select"] {
-  font-family: 'Crimson Pro', serif;
+  font-family: 'Montserrat', sans-serif;
   color: blue;
 }
 
