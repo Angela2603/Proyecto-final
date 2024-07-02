@@ -159,7 +159,7 @@ body {
 .header1 {
     color: #654321; 
     font-size: 4em;
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', sans-serif; 
 }
 
 .header2 {
@@ -175,7 +175,7 @@ body {
 }
 
 .caption-custom {
-    color: #DEB887; /* Cambia esto al color que desees */
+    color: #D4A268; /* Cambia esto al color que desees */
     font-size: 16px; /* Cambia el tamaño de la fuente si es necesario */
     font-family: 'Montserrat', sans-serif;
     text-align: justify; 
