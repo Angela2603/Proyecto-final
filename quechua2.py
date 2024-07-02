@@ -175,7 +175,7 @@ body {
 }
 
 .caption-custom {
-    color: #D2691E; /* Cambia esto al color que desees */
+    color: #DEB887; /* Cambia esto al color que desees */
     font-size: 16px; /* Cambia el tamaño de la fuente si es necesario */
     font-family: 'Montserrat', sans-serif;
     text-align: justify; 
