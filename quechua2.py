@@ -149,7 +149,7 @@ st.markdown("""
 }
 
 body {
-    background-color: #e6ddd6;
+    background-color: #F5F5DC;
     font-family: 'Crimson Pro', serif; /* Añadir la fuente 'Crimson Pro' */
 }
 
