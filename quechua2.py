@@ -234,7 +234,7 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 ## título de PARTE 1
 
-st.markdown('<h3 class="header2">Escoge un verbo y conjúgalo</h3>', unsafe_allow_html=True)
+st.markdown('<h3 class="header3">Escoge un verbo y conjúgalo</h3>', unsafe_allow_html=True)
 
 
 ## Header escoger un verbo
