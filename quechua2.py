@@ -149,7 +149,7 @@ st.markdown("""
 }
 
 body {
-    background-color: #F5F5DC;
+    background-color: #e6ddd6;
     font-family: 'Crimson Pro', serif; /* Añadir la fuente 'Crimson Pro' */
 }
 
@@ -163,7 +163,7 @@ body {
 }
 
 .header2 {
-    color: #7f5f42;     font-size: 2em;
+    color: #654321;     font-size: 2em;
     font-family: 'Playfair Display', serif;
     margin-bottom: 1px; 
 }
