@@ -163,7 +163,7 @@ body {
 }
 
 .header2 {
-    color: #654321;     font-size: 55px;
+    color: #654321;     font-size: 50px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 1px; 
 }
