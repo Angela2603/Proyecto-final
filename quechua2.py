@@ -171,6 +171,12 @@ body {
 }
 
 .header3 {
+    color: #654321;     font-size: 40px;
+    font-family: 'Wittgenstein', serif;
+    margin-bottom: 1px; 
+}
+
+.header4 {
     color: #F5F5DC;     font-size: 2em;
     font-family: 'Crimson Pro', serif;
     margin-bottom: 1px; 
@@ -227,8 +233,8 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 ### CONJUGADOR DE QUECHUA
 
 ## título de PARTE 1
- 
-st.header('Escoge un verbo y obtentlo conjugado')
+
+st.markdown('<h3 class="header2">Escoge un verbo y conjúgalo</h3>', unsafe_allow_html=True)
 
 
 ## Header escoger un verbo
