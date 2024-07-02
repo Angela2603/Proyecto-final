@@ -175,7 +175,7 @@ body {
 }
 
 .caption-custom {
-    color: #6F4E37; /* Cambia esto al color que desees */
+    color: #654321; /* Cambia esto al color que desees */
     font-size: 17px; /* Cambia el tamaño de la fuente si es necesario */
     font-family: 'Oswald', sans-serif;
     text-align: justify; 
