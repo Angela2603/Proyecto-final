@@ -160,12 +160,12 @@ body {
 
 .header1 {
     color: #654321; 
-    font-size: 2em;
+    font-size: 4em;
     font-family: 'Playfair Display', sans-serif; 
 }
 
 .header2 {
-    color: #654321;     font-size: 50px;
+    color: #654321;     font-size: 2em;
     font-family: 'Wittgenstein', serif;
     margin-bottom: 1px; 
 }
