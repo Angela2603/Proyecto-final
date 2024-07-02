@@ -163,13 +163,13 @@ body {
 }
 
 .header2 {
-    color: #654321;     font-size: 2em;
+    color: #654321;     font-size: 3em;
     font-family: 'Playfair Display', serif;
     margin-bottom: 1px; 
 }
 
 .header3 {
-    color: #D2B48C;     font-size: 2em;
+    color: #F5F5DC;     font-size: 2em;
     font-family: 'Crimson Pro', serif;
     margin-bottom: 1px; 
 }
