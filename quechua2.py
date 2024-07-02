@@ -160,7 +160,7 @@ body {
 
 .header1 {
     color: #654321; 
-    font-size: 4em;
+    font-size: 2em;
     font-family: 'Playfair Display', sans-serif; 
 }
 
