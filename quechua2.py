@@ -201,6 +201,12 @@ div[data-baseweb="select"] {
   margin-top: 0px;
 }
 
+caption1 = f"""
+<div style="text-align: center; font-size: 16px; color: #997d64; font-family: 'Montserrat', sans-serif;">
+    El verbo en español es <b>{dict_que_esp[base]}</b>
+</div>
+"""
+
 """, unsafe_allow_html=True)
 
 
@@ -249,7 +255,9 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 base = st.selectbox(
     "",
     (quechua))
-st.markdown('<p class="caption-custom">El verbo que escogiste en español es</p>', dict_que_esp[base], unsafe_allow_html=True)
+st.write("El verbo en español es", dict_que_esp[base])
+
+st.markdown(caption1, unsafe_allow_html=True)
 
 ### opcion de persona
 
