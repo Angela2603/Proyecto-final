@@ -249,7 +249,7 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 base = st.selectbox(
     "",
     (quechua))
-st.write("El verbo en español es", dict_que_esp[base])
+st.markdown('<p class="caption-custom">El verbo que escogiste en español es</p>', dict_que_esp[base], unsafe_allow_html=True)
 
 ### opcion de persona
 
@@ -337,6 +337,7 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 #### TRADUCTOR INVERSO
 
 oracion = st.text_input("Ingresa tu oración simple", "ñuqa mikuni")
+
 
 
 
