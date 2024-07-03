@@ -201,10 +201,6 @@ div[data-baseweb="select"] {
   margin-top: 0px;
 }
 
-caption1 = f
-<div style="text-align: center; font-size: 16px; color: #997d64; font-family: 'Montserrat', sans-serif;">
-    El verbo en español es <b>{dict_que_esp[base]}</b>
-</div>
 
 
 """, unsafe_allow_html=True)
@@ -257,7 +253,6 @@ base = st.selectbox(
     (quechua))
 st.write("El verbo en español es", dict_que_esp[base])
 
-st.markdown(caption1, unsafe_allow_html=True)
 
 ### opcion de persona
 
