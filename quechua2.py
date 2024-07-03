@@ -248,7 +248,7 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 
 ### opcion de base
 
-oracion = st.text_input("Ingresa tu oración simple", "ñuqa mikuni")
+base = st.text_input("Ingresa tu oración simple", "ñuqa mikuni")
 
 
 ### opcion de persona
