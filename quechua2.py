@@ -272,6 +272,21 @@ div[data-baseweb="select"] {
     color: #997d64;
 }
 
+/* Cambiar el color y la fuente del texto del input */
+.stTextInput input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #997d64;
+    background-color: #f3f3df;  /* Cambiar el color de fondo */
+    padding: 5px;
+}
+
+/* Cambiar el color y la fuente del enunciado del input */
+.stTextInput label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #997d64;
+}
 
 """, unsafe_allow_html=True)
 
@@ -406,9 +421,6 @@ st.write(f'<p class="custom1"><b>Resultado:</b> {resultado}</p>', unsafe_allow_h
 ##############################################################################
 
 st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
-
-
-
 
 #### TRADUCTOR INVERSO
 
