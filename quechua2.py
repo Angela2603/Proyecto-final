@@ -339,7 +339,7 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 #### TRADUCTOR INVERSO
 
-ora = st.text_input("Ingresa el verbo conjugado (puedes incluir el pronombre también)", "ñuqa mikuni")
+ora = st.text_input("Ingresa el verbo conjugado (puedes incluir el pronombre también):", "ñuqa mikuni")
 
 ## poner en minusculas
 
@@ -388,7 +388,13 @@ if verb.endswith("niku") or verb.endswith("nkichik") or verb.endswith("nku") or 
 
 st.write("Número:",numero)
 
+## definir tiempo
 
+### presente
 
+if verb.endswith("ni") or verb.endswith("niku") or verb.endswith("nki") or verb.endswith("nkichik") or verb.endswith("n") or verb.endswith("nku") or verb.endswith("nchik") and ('rqa' or 'sqa' not in verb):
+    
+    tiempo = "Presente"
 
+st.write("Tiempo:",tiempo)
 
