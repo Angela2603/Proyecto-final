@@ -182,7 +182,7 @@ body {
 }
 
 .caption-custom {
-    color: #997d64; /* Cambia esto al color que desees */
+    color: #997d64; 
     font-size: 16px; /* Cambia el tamaño de la fuente si es necesario */
     font-family: 'Montserrat', sans-serif;
     text-align: justify; 
@@ -198,6 +198,14 @@ div[data-baseweb="select"] {
   font-family: 'Montserrat', sans-serif;
   color: #997d64
   margin-top: 0px;
+}
+
+.custom1 {
+    font-size: 16px;
+    color: #997d64;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
 }
 
 
@@ -404,7 +412,8 @@ if 'rqa' in verb:
 
 if 'sqa' in verb:
     tiempo = "Pasado no experimentado"
-    
+
+st.write('<p class="custom1">Tiempo:,tiempo</p>', unsafe_allow_html=True)    
 st.write("Tiempo:",tiempo)
 
 ## definir aspecto
