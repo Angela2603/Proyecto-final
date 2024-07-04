@@ -434,7 +434,7 @@ if 'chka' not in verb and vaux == '':
     aspecto = 'Simple'
     
 ## habitual
-if 'ka' in vaux:
+if verb.endswith('q') and'ka' in vaux:
     aspecto = 'Habitual'
     
 st.write(f'<p class="custom1"><b>Aspecto:</b> {aspecto}</p>', unsafe_allow_html=True)
