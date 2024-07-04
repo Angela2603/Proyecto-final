@@ -205,21 +205,7 @@ div[data-baseweb="select"] {
     text-align: justify;
 }
 
-.stRadio > div {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-}
 
-/* Cambiar el color de las opciones del radio */
-.stRadio div[data-baseweb="radio"] label {
-    color: #997d64;
-}
-
-/* Cambiar el color del círculo del radio cuando está seleccionado */
-.stRadio div[data-baseweb="radio"] input:checked + div {
-    background-color: green;
-}
 
 
 
