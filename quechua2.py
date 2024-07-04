@@ -89,7 +89,7 @@ def C_Pas_NExp(base,persona,numero):
     if numero == 'Singular':
       r_pas_nexp = base + 'sqa'
     if numero == 'Plural':
-      r_pas_nexp = base + 'sqa' + 'k'
+      r_pas_nexp = base + 'sqa' + 'ku'
   else:
     r_pas_nexp = base + 'sqa' + CPS(base,persona,numero)[len(base):]
 
@@ -369,7 +369,7 @@ if verb.endswith("ni") or verb.endswith("niku"):
 if verb.endswith("nki") or verb.endswith("nkichik"):
     persona = "Segunda"
 
-if verb.endswith("n") or verb.endswith("nku"):
+if verb.endswith("n") or verb.endswith("nku") or verb.endswith("rqa"):
     persona = "Tercera"
 
 if verb.endswith("nchik"):
@@ -377,11 +377,16 @@ if verb.endswith("nchik"):
     
 st.write("Persona:",persona)
 
+## definir número
+
+if verb.endswith("ni") or verb.endswith("nki") or verb.endswith("n") or verb.endswith("nchik") or verb.endswith("rqa"):
+    numero = "Singular"
+
+if verb.endswith("niku") or verb.endswith("nkichik") or verb.endswith("nku") or verb.endswith("rqa"):
+    numero = "Singular"
 
 
-
-
-
+st.write("Número:",numero)
 
 
 
