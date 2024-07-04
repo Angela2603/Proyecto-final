@@ -164,7 +164,7 @@ body {
 .header2 {
     color: #C2B080;     font-size: 2em;
     font-family: 'Wittgenstein', serif;
-    margin-bottom: 1px; 
+    margin-bottom: 0px; 
 }
 
 .header3 {
