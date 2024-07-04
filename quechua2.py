@@ -180,7 +180,7 @@ body {
 }
 
 .header5 { /* Subsubtitulos */
-    color: #C2B080;     font-size: 1em;
+    color: #C2B080;     font-size: 20px;
     font-family: 'Wittgenstein', serif;
     margin-bottom: 1px; 
 }
@@ -265,7 +265,8 @@ st.markdown('<h2 class="header2">¡Bienvenido!</h2>', unsafe_allow_html=True)
 ## texto de presentacion
 st.markdown('<p class="caption-custom">Te presentamos el conjugador de quechua de la variedad <b>chanca</b>. Esta página realiza dos acciones: en la primera parte, puedes escoger un verbo y conjugarlo de diferentes maneras, podrás escoger la persona, número, tiempo y aspecto; en la segunda parte, podrás introducir un verbo conjugado y obtendrás su persona, número, tiempo y aspecto.</p>', unsafe_allow_html=True)
 
-st.markdown('<h4 class="header5">¿Cuál es la variedad chanka del quechua?</h4>', unsafe_allow_html=True)
+st.markdown('<h4 class="header5"><b>¿Cuál es la variedad chanka del quechua?</b></h4>', unsafe_allow_html=True)
+
 st.markdown('<p class="caption-custom">Esta variedad es conocida también como variedad <b>ayacuchana</b> y forma parte de la <b>subrama sureña</b> o <b>subrama Quechua II</b>. Es hablada en Huancavelica, Ayacucho y en la parte oeste de Apurímac.</p>', unsafe_allow_html=True)
 
 ## divider 2
