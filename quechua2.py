@@ -374,15 +374,13 @@ if len(ora2) == 2:
         verb = ora2[1]
         vaux = ''
     else:
-        verb = ora[0]
-        vaux = ora[1]
+        verb = ora2[0]
+        vaux = ora2[1]
 if len(ora2) == 3:
     pron = ora2[0]
     verb = ora2[1]
     vaux = ora2[2]
-ora2[0]
-ora2[1]
-verb
+
 
 ## definir persona
 if verb.endswith("ni") or verb.endswith("niku"):
