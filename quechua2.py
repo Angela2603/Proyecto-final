@@ -348,12 +348,22 @@ ora = ora.lower()
 ## quitar simbolos raros
 b = ['.',',','\n',')','(','"','-']
 for simbolo in b:
-    t = t.replace(simbolo,'')
+    ora = ora.replace(simbolo,'')
 
 ## cortar en strings
 
 ora2 = ora.split(' ')
-ora2
+
+## definiendo variables
+
+if len(ora2) == 1:
+    verb = ora2[0]
+if len(ora2) == 2:
+    pron = ora2[0]
+    verb = ora2[1]
+
+## definir persona
+
 
 
 
