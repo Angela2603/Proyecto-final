@@ -406,13 +406,13 @@ st.write(f'<p class="custom1"><b>Número:</b> {numero}</p>', unsafe_allow_html=T
 
 ### presente
 
-if verb.endswith("ni") or verb.endswith("niku") or verb.endswith("nki") or verb.endswith("nkichik") or verb.endswith("n") or verb.endswith("nku") or verb.endswith("nchik") and ('rqa' or 'sqa' not in verb):
+if (verb.endswith("ni") or verb.endswith("niku") or verb.endswith("nki") or verb.endswith("nkichik") or verb.endswith("n") or verb.endswith("nku") or verb.endswith("nchik") and ('rqa' or 'sqa' not in verb)) or (vaux.endswith("ni") or vaux.endswith("niku") or vaux.endswith("nki") or vaux.endswith("nkichik") or vaux.endswith("n") or vaux.endswith("nku") or vaux.endswith("nchik") and ('rqa' or 'sqa' not in vaux)) :
     
     tiempo = "Presente"
     
 ### pasado experimentado
 
-if 'rqa' in verb:
+if 'rqa' in verb or 'rqa' in vaux:
     tiempo = "Pasado experimentado"
 
 ### pasado no experimentado
