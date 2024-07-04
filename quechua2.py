@@ -360,15 +360,21 @@ for simbolo in b:
 
 ora2 = ora.split(' ')
 
+## lista con pronombres
+L_Pron = ['ñuqa','qam','pay','ñuqanchik','ñuqayku','qamkuna','paykuna']
 ## definiendo variables
 
 if len(ora2) == 1:
     verb = ora2[0]
     vaux = ''
 if len(ora2) == 2:
-    pron = ora2[0]
-    verb = ora2[1]
-    vaux = ''
+    if ora2[0] in L_Pron:
+        pron = ora2[0]
+        verb = ora2[1]
+        vaux = ''
+    else:
+        verb = ora[0]
+        vaux = ora[1]
 if len(ora2) == 3:
     pron = ora2[0]
     verb = ora2[1]
