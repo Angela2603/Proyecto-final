@@ -257,7 +257,7 @@ div[data-baseweb="select"] {
 
 /* Cambiar el color del texto seleccionado en el selectbox */
 .stSelectbox .css-1uccc91-singleValue {
-    color: blue;
+    color: #f3f3df;
 }
 
 /* Cambiar el color de las opciones del selectbox en el menú desplegable */
