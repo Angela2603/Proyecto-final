@@ -381,7 +381,8 @@ if verb.endswith("n") or verb.endswith("nku") or verb.endswith("rqa"):
 if verb.endswith("nchik"):
     persona = "Cuarta"
     
-st.write("Persona:",persona)
+#### resultado
+st.write(f'<p class="custom1"><b>Persona:</b> {persona}</p>', unsafe_allow_html=True)
 
 ## definir número
 
@@ -392,7 +393,8 @@ if verb.endswith("niku") or verb.endswith("nkichik") or verb.endswith("nku") or 
     numero = "Plural"
 
 
-st.write("Número:",numero)
+#### resultado
+st.write(f'<p class="custom1"><b>Número:</b> {numero}</p>', unsafe_allow_html=True)
 
 ## definir tiempo
 
@@ -414,7 +416,6 @@ if 'sqa' in verb:
     
 st.write(f'<p class="custom1"><b>Tiempo:</b> {tiempo}</p>', unsafe_allow_html=True)
    
-
 
 ## definir aspecto
 
