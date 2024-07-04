@@ -179,6 +179,12 @@ body {
     margin-bottom: 1px; 
 }
 
+.header5 {
+    color: #C2B080;     font-size: 1em;
+    font-family: 'Wittgenstein', serif;
+    margin-bottom: 1px; 
+}
+
 .caption-custom {
     color: #997d64; 
     font-size: 16px; /* Cambia el tamaño de la fuente si es necesario */
@@ -268,7 +274,7 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 ## título de PARTE 1
 
-st.markdown('<h3 class="header3">¡Escoge un verbo y conjúgalo!</h3>', unsafe_allow_html=True)
+st.markdown('<h4 class="header3">¡Escoge un verbo y conjúgalo!</h3>', unsafe_allow_html=True)
 
 
 ## Header escoger un verbo
