@@ -208,7 +208,7 @@ div[data-baseweb="select"] {
 .stRadio > div {
     background-color: #f3f3df;
     padding: 5px;
-    border-radius: 30px;
+    border-radius: 5px;
     margin-top: 0;
 }
 
