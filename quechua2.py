@@ -257,7 +257,7 @@ div[data-baseweb="select"] {
 
 /* Cambiar el color del texto seleccionado en el selectbox */
 .stSelectbox .css-1uccc91-singleValue {
-    color: #997d64;
+    color: blue;
 }
 
 /* Cambiar el color de las opciones del selectbox en el menú desplegable */
@@ -325,19 +325,19 @@ st.write(f'<p class="custom1">El verbo en español es <b>{dict_que_esp[base]}</b
 ### opcion de persona
 
 persona = st.radio(
-    'Selecciona la persona',
+    'Selecciona la persona:',
     ['Primera','Segunda','Tercera','Cuarta'])
 
 ### opcion de numero
 
 numero = st.radio(
-    'Selecciona el número',
+    'Selecciona el número:',
     ['Singular','Plural'])
 
 ### boton de tiempo
 
 t = st.selectbox(
-    'Selecciona el tiempo',
+    'Selecciona el tiempo:',
     ['Presente','Pasado'])
 
 ## boton cuando es tiempo presente
