@@ -367,6 +367,7 @@ L_Pron = ['ñuqa','qam','pay','ñuqanchik','ñuqayku','qamkuna','paykuna']
 if len(ora2) == 1:
     verb = ora2[0]
     vaux = ''
+    
 if len(ora2) == 2:
     if ora2[0] in L_Pron:
         pron = ora2[0]
@@ -379,6 +380,7 @@ if len(ora2) == 3:
     pron = ora2[0]
     verb = ora2[1]
     vaux = ora2[2]
+ora2[0]
 
 ## definir persona
 if verb.endswith("ni") or verb.endswith("niku"):
