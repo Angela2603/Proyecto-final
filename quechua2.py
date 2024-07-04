@@ -263,7 +263,7 @@ with col1:
 st.markdown('<h2 class="header2">¡Bienvenido!</h2>', unsafe_allow_html=True)
 
 ## texto de presentacion
-st.markdown('<p class="caption-custom">Te presentamos el conjugador de quechua de la variedad <b>chanca</b>. Esta página realiza dos acciones: en la primera parte, puedes escoger un verbo y conjugarlo de diferentes maneras, podrás escoger la persona, número, tiempo y aspecto; en la segunda parte, podrás introducir un verbo conjugado y obtendrás su persona, número, tiempo y aspecto.</p>', unsafe_allow_html=True)
+st.markdown('<p class="caption-custom">Te presentamos el <b>conjugador</b> de quechua de la variedad <b>chanca</b>. Esta página realiza dos acciones: en la primera parte, puedes escoger un verbo y conjugarlo de diferentes maneras, podrás escoger la persona, número, tiempo y aspecto; en la segunda parte, podrás introducir un verbo conjugado y obtendrás su persona, número, tiempo y aspecto.</p>', unsafe_allow_html=True)
 
 st.markdown('<h4 class="header5"><b>¿Cuál es la variedad chanca del quechua?</b></h4>', unsafe_allow_html=True)
 
