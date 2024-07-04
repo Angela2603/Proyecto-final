@@ -29,7 +29,6 @@ for i in datos.index:
   d = dict(zip(['Singular','Plural'],f[1:]))
   D[f[0]] = d
 
-D ### borrar luego
 
 ##### FUNCIONES ######
 
@@ -395,6 +394,25 @@ st.write("Número:",numero)
 if verb.endswith("ni") or verb.endswith("niku") or verb.endswith("nki") or verb.endswith("nkichik") or verb.endswith("n") or verb.endswith("nku") or verb.endswith("nchik") and ('rqa' or 'sqa' not in verb):
     
     tiempo = "Presente"
+    
+### pasado experimentado
 
+if 'rqa' in verb:
+    tiempo = "Pasado experimentado"
+
+### pasado no experimentado
+
+if 'sqa' in verb:
+    tiempo = "Pasado no experimentado"
+    
 st.write("Tiempo:",tiempo)
+
+## definir aspecto
+
+### progresivo
+if 'chka' in verb:
+    
+    aspecto = 'Progresivo'
+
+
 
