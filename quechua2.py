@@ -383,7 +383,7 @@ if verb.endswith("ni") or verb.endswith("nki") or verb.endswith("n") or verb.end
     numero = "Singular"
 
 if verb.endswith("niku") or verb.endswith("nkichik") or verb.endswith("nku") or verb.endswith("rqa"):
-    numero = "Singular"
+    numero = "Plural"
 
 
 st.write("Número:",numero)
