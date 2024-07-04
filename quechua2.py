@@ -381,6 +381,7 @@ if len(ora2) == 3:
     verb = ora2[1]
     vaux = ora2[2]
 ora2[0]
+ora2[1]
 verb
 
 ## definir persona
