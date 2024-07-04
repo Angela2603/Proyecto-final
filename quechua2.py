@@ -179,7 +179,7 @@ body {
     margin-bottom: 1px; 
 }
 
-.header5 {
+.header5 { /* Subsubtitulos */
     color: #C2B080;     font-size: 1em;
     font-family: 'Wittgenstein', serif;
     margin-bottom: 1px; 
@@ -187,7 +187,7 @@ body {
 
 .caption-custom {
     color: #997d64; 
-    font-size: 16px; /* Cambia el tamaño de la fuente si es necesario */
+    font-size: 16px; 
     font-family: 'Montserrat', sans-serif;
     text-align: justify; 
     }
@@ -265,6 +265,7 @@ st.markdown('<h2 class="header2">¡Bienvenido!</h2>', unsafe_allow_html=True)
 ## texto de presentacion
 st.markdown('<p class="caption-custom">Te presentamos el conjugador de quechua de la variedad <b>chanca</b>. Esta página realiza dos acciones: en la primera parte, puedes escoger un verbo y conjugarlo de diferentes maneras, podrás escoger la persona, número, tiempo y aspecto; en la segunda parte, podrás introducir un verbo conjugado y obtendrás su persona, número, tiempo y aspecto.</p>', unsafe_allow_html=True)
 
+st.markdown('<h4 class="header5">¿Cuál es la variedad chanka del quechua?</h4>', unsafe_allow_html=True)
 st.markdown('<p class="caption-custom">Esta variedad es conocida también como variedad <b>ayacuchana</b> y forma parte de la <b>subrama sureña</b> o <b>subrama Quechua II</b>. Es hablada en Huancavelica, Ayacucho y en la parte oeste de Apurímac.</p>', unsafe_allow_html=True)
 
 ## divider 2
@@ -274,7 +275,7 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 ## título de PARTE 1
 
-st.markdown('<h4 class="header3">¡Escoge un verbo y conjúgalo!</h3>', unsafe_allow_html=True)
+st.markdown('<h3 class="header3">¡Escoge un verbo y conjúgalo!</h3>', unsafe_allow_html=True)
 
 
 ## Header escoger un verbo
