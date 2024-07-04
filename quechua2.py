@@ -211,6 +211,12 @@ div[data-baseweb="select"] {
     border-radius: 5px;
 }
 
+.stRadio label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #997d64;
+}
+
 /* Cambiar el color de las opciones del radio */
 .stRadio div[data-baseweb="radio"] label {
     color: #997d64;
