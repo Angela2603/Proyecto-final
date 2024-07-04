@@ -257,8 +257,7 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 base = st.selectbox(
     "",
     (quechua))
-st.write("El verbo en español es", dict_que_esp[base])
-
+st.write(f'<p class="custom1"><b>Aspecto:</b> {dict_que_esp[base]}</p>', unsafe_allow_html=True)
 
 ### opcion de persona
 
@@ -334,7 +333,7 @@ else:
   resultado = P[persona][numero] + ' ' + v_conj
 
 
-st.write("**Resultado:**",resultado)
+st.write(f'<p class="custom1"><b>Resultado:</b> {resultado}</p>', unsafe_allow_html=True)
 
 ##############################################################################
 
