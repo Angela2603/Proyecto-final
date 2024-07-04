@@ -257,7 +257,7 @@ P = {'Primera':{'Singular':'ñuqa','Plural':'ñuqayku'},'Segunda':{'Singular':'q
 base = st.selectbox(
     "",
     (quechua))
-st.write(f'<p class="custom1"><b>Aspecto:</b> {dict_que_esp[base]}</p>', unsafe_allow_html=True)
+st.write(f'<p class="custom1"><b>El verbo en español es</b> {dict_que_esp[base]}</p>', unsafe_allow_html=True)
 
 ### opcion de persona
 
