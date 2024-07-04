@@ -260,6 +260,11 @@ div[data-baseweb="select"] {
     color: #f3f3df;
 }
 
+/* Cambiar el color de fondo de la caja del selectbox */
+.stSelectbox .css-1d391kg-control {
+    background-color: #f3f3df;  /* Color de fondo deseado */
+}
+
 /* Cambiar el color de las opciones del selectbox en el menú desplegable */
 .stSelectbox .css-26l3qy-menu {
     font-family: 'Montserrat', sans-serif;
