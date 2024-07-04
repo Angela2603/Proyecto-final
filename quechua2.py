@@ -212,6 +212,11 @@ div[data-baseweb="select"] {
     margin-top: 0;
 }
 
+.stRadio label.css-1cpxqw2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #997d64;
+}
 
 .stRadio label {
     font-family: 'Montserrat', sans-serif;
