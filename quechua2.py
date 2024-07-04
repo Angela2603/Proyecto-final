@@ -436,11 +436,11 @@ if 'chka' in verb:
     aspecto = 'Progresivo'
     
 ## simple
-elif 'chka' not in verb and vaux == '':
+if 'chka' not in verb and vaux == '':
     aspecto = 'Simple'
     
 ## habitual
-elif verb.endswith('q') and'ka' in vaux:
+if verb.endswith('q') and'ka' in vaux:
     aspecto = 'Habitual'
     
 st.write(f'<p class="custom1"><b>Aspecto:</b> {aspecto}</p>', unsafe_allow_html=True)
