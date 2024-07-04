@@ -412,8 +412,9 @@ if 'rqa' in verb:
 
 if 'sqa' in verb:
     tiempo = "Pasado no experimentado"
-
-st.write('<p class="custom1">Tiempo:,tiempo</p>', unsafe_allow_html=True)    
+    
+st.write(f'<p class="custom1">Tiempo;{tiempo}</p>', unsafe_allow_html=True)
+   
 st.write("Tiempo:",tiempo)
 
 ## definir aspecto
