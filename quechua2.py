@@ -339,7 +339,22 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 #### TRADUCTOR INVERSO
 
-oracion = st.text_input("Ingresa tu oración simple", "ñuqa mikuni")
+ora = st.text_input("Ingresa el verbo conjugado (puedes incluir el pronombre también)", "ñuqa mikuni")
+
+## poner en minusculas
+
+ora = ora.lower()
+
+## quitar simbolos raros
+b = ['.',',','\n',')','(','"','-']
+for simbolo in b:
+    t = t.replace(simbolo,'')
+
+## cortar en strings
+
+ora2 = ora.split(' ')
+ora2
+
 
 
 
