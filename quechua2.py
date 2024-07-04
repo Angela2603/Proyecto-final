@@ -364,9 +364,15 @@ ora2 = ora.split(' ')
 
 if len(ora2) == 1:
     verb = ora2[0]
+    vaux = ''
 if len(ora2) == 2:
     pron = ora2[0]
     verb = ora2[1]
+    vaux = ''
+if len(ora2) == 3:
+    pron = ora2[0]
+    verb = ora2[1]
+    vaux = ora2[3]
 
 ## definir persona
 if verb.endswith("ni") or verb.endswith("niku"):
@@ -420,9 +426,17 @@ st.write(f'<p class="custom1"><b>Tiempo:</b> {tiempo}</p>', unsafe_allow_html=Tr
 ## definir aspecto
 
 ### progresivo
-if 'chka' in verb:
-    
+if 'chka' in verb: 
     aspecto = 'Progresivo'
+    
+## simple
+if 'chka' not in verb and vaux == '':
+    aspecto = 'Simple'
+    
+## habitual
+if 'ka' in vaux:
+    aspecto = 'Habitual'
+    
 
 
 
