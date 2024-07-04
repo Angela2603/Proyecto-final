@@ -427,7 +427,7 @@ if 'rqa' in verb or 'rqa' in vaux:
 
 ### pasado no experimentado
 
-if 'sqa' in verb:
+if 'sqa' in verb or 'sqa' in vaux:
     tiempo = "Pasado no experimentado"
     
 st.write(f'<p class="custom1"><b>Tiempo:</b> {tiempo}</p>', unsafe_allow_html=True)
@@ -444,7 +444,7 @@ if 'chka' not in verb and vaux == '':
     aspecto = 'Simple'
     
 ## habitual
-if verb.endswith('q') and'ka' in vaux:
+if verb.endswith('q') and 'ka' in vaux:
     aspecto = 'Habitual'
     
 st.write(f'<p class="custom1"><b>Aspecto:</b> {aspecto}</p>', unsafe_allow_html=True)
