@@ -284,20 +284,21 @@ st.write(f'<p class="custom1">El verbo en español es <b>{dict_que_esp[base]}</b
 
 ### opcion de persona
 
+st.markdown('<p class="caption-custom">Selecciona la persona</p>', unsafe_allow_html=True)
 persona = st.radio(
-    'Selecciona la persona',
+    '',
     ['Primera','Segunda','Tercera','Cuarta'])
 
 ### opcion de numero
-
+st.markdown('<p class="caption-custom">Selecciona el número</p>', unsafe_allow_html=True)
 numero = st.radio(
-    'Selecciona el número',
+    '',
     ['Singular','Plural'])
 
 ### boton de tiempo
-
+st.markdown('<p class="caption-custom">Selecciona el tiempo</p>', unsafe_allow_html=True)
 t = st.selectbox(
-    'Selecciona el tiempo',
+    '',
     ['Presente','Pasado'])
 
 ## boton cuando es tiempo presente
