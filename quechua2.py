@@ -363,7 +363,19 @@ if len(ora2) == 2:
     verb = ora2[1]
 
 ## definir persona
+if verb.endswith("ni") or verb.endswith("niku"):
+    persona = "Primera"
 
+if verb.endswith("nki") or verb.endswith("nkichik"):
+    persona = "Segunda"
+
+if verb.endswith("n") or verb.endswith("nku"):
+    persona = "Tercera"
+
+if verb.endswith("nchik"):
+    persona = "Cuarta"
+    
+st.write("Persona:",persona)
 
 
 
