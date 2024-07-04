@@ -345,6 +345,9 @@ st.markdown('<div class="custom-divider"></div>', unsafe_allow_html=True)
 
 #### TRADUCTOR INVERSO
 
+st.markdown('<h3 class="header3">¡Escribe un verbo conjugado y obtén sus rasgos gramaticales!</h3>', unsafe_allow_html=True)
+
+
 ora = st.text_input("Ingresa el verbo conjugado (puedes incluir el pronombre también):", "ñuqa mikuni")
 
 ## poner en minusculas
