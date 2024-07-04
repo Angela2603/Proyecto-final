@@ -213,8 +213,9 @@ div[data-baseweb="select"] {
 
 .stRadio label {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: #997d64;
+    text-align: justify;
 }
 
 /* Cambiar el color de las opciones del radio */
