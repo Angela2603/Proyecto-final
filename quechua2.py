@@ -241,6 +241,31 @@ div[data-baseweb="select"] {
     background-color: #654321;
 }
 
+/* Cambiar la fuente y el color del enunciado del selectbox */
+.stSelectbox label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #997d64;
+}
+
+/* Cambiar la fuente y el color de las opciones del selectbox */
+.stSelectbox .css-1d391kg-control {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #997d64;
+}
+
+/* Cambiar el color del texto seleccionado en el selectbox */
+.stSelectbox .css-1uccc91-singleValue {
+    color: #997d64;
+}
+
+/* Cambiar el color de las opciones del selectbox en el menú desplegable */
+.stSelectbox .css-26l3qy-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #997d64;
+}
 
 
 """, unsafe_allow_html=True)
