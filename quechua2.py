@@ -291,9 +291,9 @@ st.write(f'<p class="custom1">El verbo en español es <b>{dict_que_esp[base]}</b
 
 ### opcion de persona
 
-st.write(f'<p class="custom1">El verbo en es prueba <b>{dict_que_esp[base]}</b></p>', unsafe_allow_html=True)
+st.write(f'<p class="custom1">Selecciona la persona:<b>{dict_que_esp[base]}</b></p>', unsafe_allow_html=True)
 persona = st.radio(
-    '',
+    'Selecciona la persona',
     ['Primera','Segunda','Tercera','Cuarta'])
 
 ### opcion de numero
