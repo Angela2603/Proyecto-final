@@ -482,7 +482,7 @@ if len(ora2) == 3:
 
 ## error
 if ('ni' or 'niku' or 'nki' or 'nkichik' or 'n' or 'rqa' or 'nchik') not in verb or vaux:
-    st.error('¡Oops! Lo sentimos, el texto ingresado no puede ser procesado', icon="🚨")
+    st.error('¡Oops! Lo sentimos, el texto ingresado no puede ser procesado.', icon="🚨")
 else:
 ## definir persona
     if verb.endswith("ni") or verb.endswith("niku"):
@@ -552,5 +552,7 @@ else:
         aspecto = 'Habitual'
         
     st.write(f'<p class="custom1"><b>Aspecto:</b> {aspecto}</p>', unsafe_allow_html=True)
+    
+st.info('This is a purely informational message', icon="ℹ️")
 
 
