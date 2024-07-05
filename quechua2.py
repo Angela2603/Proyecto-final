@@ -302,19 +302,21 @@ div[data-baseweb="select"] {
     color: #997d64;  /* Color del texto */
 }
 
-/* st.info Cambiar el color de fondo del mensaje de info */
-.stAlert[data-baseweb="alert"] {
-    background-color: #f3f3df;  /* Color de fondo deseado */
-    border-radius: 5px;         /* Redondear bordes */
-    padding: 5px;              /* Añadir padding */
+/* Cambiar el color de fondo y el borde del expander */
+.streamlit-expanderHeader {
+    background-color: #f0f0f0;
+    border: 2px solid #cccccc;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-/* Cambiar la fuente y el color del texto del mensaje de info */
-.stAlert[data-baseweb="alert"] .css-1w3p48m {
+/* Cambiar la fuente y el color del contenido de st.write dentro del expander */
+.stExpander .streamlit-expanderContent p {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    color: #997d64;  /* Color del texto */
+    color: #997d64;
 }
+
 """, unsafe_allow_html=True)
 
 
@@ -447,6 +449,7 @@ else:
   resultado = P[persona][numero] + ' ' + v_conj
 
 
+
 st.write(f'<p class="custom1"><b>Resultado:</b> {resultado}</p>', unsafe_allow_html=True)
 
 ##############################################################################
@@ -574,6 +577,6 @@ with st.expander("See explanation"):
         I rolled actual dice for these, so they're *guaranteed* to
         be random.
     ''')
+    
 
-st.info('This is a purely informational message', icon="ℹ️")
 
