@@ -301,6 +301,21 @@ div[data-baseweb="select"] {
     font-size: 16px;
     color: #997d64;  /* Color del texto */
 }
+
+/* st.info Cambiar el color de fondo del mensaje de info */
+.stAlert[data-baseweb="alert"] {
+    background-color: #e0f7fa;  /* Color de fondo deseado */
+    border: 2px solid #00acc1;  /* Color del borde */
+    border-radius: 5px;         /* Redondear bordes */
+    padding: 10px;              /* Añadir padding */
+}
+
+/* Cambiar la fuente y el color del texto del mensaje de info */
+.stAlert[data-baseweb="alert"] .css-1w3p48m {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #00796b;  /* Color del texto */
+}
 """, unsafe_allow_html=True)
 
 
@@ -553,6 +568,13 @@ else:
         
     st.write(f'<p class="custom1"><b>Aspecto:</b> {aspecto}</p>', unsafe_allow_html=True)
     
-st.info('This is a purely informational message', icon="ℹ️")
 
+with st.expander("See explanation"):
+    st.write('''
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    ''')
+
+st.info('This is a purely informational message', icon="ℹ️")
 
