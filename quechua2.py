@@ -288,6 +288,19 @@ div[data-baseweb="select"] {
     color: #997d64;
 }
 
+/* Cambiar el color de fondo del mensaje de error */
+.stAlert[data-baseweb="alert"] {
+    background-color: #f3f3df;  /* Color de fondo deseado */
+    border-radius: 5px;         /* Redondear bordes */
+    padding: 5px;              /* Añadir padding */
+}
+
+/* Cambiar la fuente y el color del texto del mensaje de error */
+.stAlert[data-baseweb="alert"] .css-1w3p48m {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #997d64;  /* Color del texto */
+}
 """, unsafe_allow_html=True)
 
 
