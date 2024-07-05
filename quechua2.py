@@ -304,17 +304,16 @@ div[data-baseweb="select"] {
 
 /* st.info Cambiar el color de fondo del mensaje de info */
 .stAlert[data-baseweb="alert"] {
-    background-color: #e0f7fa;  /* Color de fondo deseado */
-    border: 2px solid #00acc1;  /* Color del borde */
+    background-color: #f3f3df;  /* Color de fondo deseado */
     border-radius: 5px;         /* Redondear bordes */
-    padding: 10px;              /* Añadir padding */
+    padding: 5px;              /* Añadir padding */
 }
 
 /* Cambiar la fuente y el color del texto del mensaje de info */
 .stAlert[data-baseweb="alert"] .css-1w3p48m {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #00796b;  /* Color del texto */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #997d64;  /* Color del texto */
 }
 """, unsafe_allow_html=True)
 
