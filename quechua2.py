@@ -467,74 +467,77 @@ if len(ora2) == 3:
     verb = ora2[1]
     vaux = ora2[2]
 
-
+## error
+if ('ni' or 'niku' or 'nki' or 'nkichik' or 'n' or 'rqa' or 'nchik') not in verb or vaux:
+    st.error('¡Oops! El texto ingresado no puede ser procesado', icon="🚨")
+else:
 ## definir persona
-if verb.endswith("ni") or verb.endswith("niku"):
-    persona = "Primera"
-
-if verb.endswith("nki") or verb.endswith("nkichik"):
-    persona = "Segunda"
-
-if verb.endswith("n") or verb.endswith("nku") or verb.endswith("rqa"):
-    persona = "Tercera"
-
-if verb.endswith("nchik"):
-    persona = "Cuarta"
+    if verb.endswith("ni") or verb.endswith("niku"):
+        persona = "Primera"
     
-#### resultado
-st.write(f'<p class="custom1"><b>Persona:</b> {persona}</p>', unsafe_allow_html=True)
-
-## definir número
-
-if verb.endswith("ni") or verb.endswith("nki") or verb.endswith("n") or verb.endswith("nchik") or verb.endswith("rqa"):
-    numero = "Singular"
-
-if verb.endswith("niku") or verb.endswith("nkichik") or verb.endswith("nku") or verb.endswith("rqa"):
-    numero = "Plural"
-
-
-#### resultado
-st.write(f'<p class="custom1"><b>Número:</b> {numero}</p>', unsafe_allow_html=True)
-
-## definir TIEMPO
-
-### presente
-
-if verb.endswith("ni") or verb.endswith("niku") or verb.endswith("nki") or verb.endswith("nkichik") or verb.endswith("n") or verb.endswith("nku") or verb.endswith("nchik") and ('rqa' or 'sqa' not in verb):
-    tiempo = "Presente"
-
-elif vaux.endswith("ni") or vaux.endswith("niku") or vaux.endswith("nki") or vaux.endswith("nkichik") or vaux.endswith("n") or vaux.endswith("nku") or vaux.endswith("nchik") and ('rqa' or 'sqa' not in vaux) and verb.endswith('q'):
-    tiempo = "Presente"
+    if verb.endswith("nki") or verb.endswith("nkichik"):
+        persona = "Segunda"
+    
+    if verb.endswith("n") or verb.endswith("nku") or verb.endswith("rqa"):
+        persona = "Tercera"
+    
+    if verb.endswith("nchik"):
+        persona = "Cuarta"
+        
+    #### resultado
+    st.write(f'<p class="custom1"><b>Persona:</b> {persona}</p>', unsafe_allow_html=True)
+    
+    ## definir número
+    
+    if verb.endswith("ni") or verb.endswith("nki") or verb.endswith("n") or verb.endswith("nchik") or verb.endswith("rqa"):
+        numero = "Singular"
+    
+    if verb.endswith("niku") or verb.endswith("nkichik") or verb.endswith("nku") or verb.endswith("rqa"):
+        numero = "Plural"
     
     
+    #### resultado
+    st.write(f'<p class="custom1"><b>Número:</b> {numero}</p>', unsafe_allow_html=True)
     
-### pasado experimentado
-
-if 'rqa' in verb or 'rqa' in vaux:
-    tiempo = "Pasado experimentado"
-
-### pasado no experimentado
-
-if 'sqa' in verb or 'sqa' in vaux:
-    tiempo = "Pasado no experimentado"
+    ## definir TIEMPO
     
-st.write(f'<p class="custom1"><b>Tiempo:</b> {tiempo}</p>', unsafe_allow_html=True)
-   
-
-## definir aspecto
-
-### progresivo
-if 'chka' in verb: 
-    aspecto = 'Progresivo'
+    ### presente
     
-## simple
-if 'chka' not in verb and vaux == '':
-    aspecto = 'Simple'
+    if verb.endswith("ni") or verb.endswith("niku") or verb.endswith("nki") or verb.endswith("nkichik") or verb.endswith("n") or verb.endswith("nku") or verb.endswith("nchik") and ('rqa' or 'sqa' not in verb):
+        tiempo = "Presente"
     
-## habitual
-if verb.endswith('q') and 'ka' in vaux:
-    aspecto = 'Habitual'
+    elif vaux.endswith("ni") or vaux.endswith("niku") or vaux.endswith("nki") or vaux.endswith("nkichik") or vaux.endswith("n") or vaux.endswith("nku") or vaux.endswith("nchik") and ('rqa' or 'sqa' not in vaux) and verb.endswith('q'):
+        tiempo = "Presente"
+        
+        
+        
+    ### pasado experimentado
     
-st.write(f'<p class="custom1"><b>Aspecto:</b> {aspecto}</p>', unsafe_allow_html=True)
+    if 'rqa' in verb or 'rqa' in vaux:
+        tiempo = "Pasado experimentado"
+    
+    ### pasado no experimentado
+    
+    if 'sqa' in verb or 'sqa' in vaux:
+        tiempo = "Pasado no experimentado"
+        
+    st.write(f'<p class="custom1"><b>Tiempo:</b> {tiempo}</p>', unsafe_allow_html=True)
+       
+    
+    ## definir aspecto
+    
+    ### progresivo
+    if 'chka' in verb: 
+        aspecto = 'Progresivo'
+        
+    ## simple
+    if 'chka' not in verb and vaux == '':
+        aspecto = 'Simple'
+        
+    ## habitual
+    if verb.endswith('q') and 'ka' in vaux:
+        aspecto = 'Habitual'
+        
+    st.write(f'<p class="custom1"><b>Aspecto:</b> {aspecto}</p>', unsafe_allow_html=True)
 
 
